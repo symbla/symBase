@@ -44,7 +44,6 @@
 		}
 	});
 
-
 var SymBase = {
 
 	notify: function(notifyMode, notifyMsgDE = Array(), notifyMsgEN = Array(), notifyIcon = "bullhorn") {
