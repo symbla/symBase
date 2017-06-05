@@ -9,7 +9,17 @@ var ssbLogin = {
 
     init: function() {
 
-        $("#ssbDivLoginCR").append("<p id=\"ssbLPSlogan\">symbla &raquo; keep your web in place</p>");
+        $("<div/>", {
+            html: function() {
+
+                $("<p/>", {
+                    id: "ssbLPSlogan",
+                    html: "symbla &raquo; keep your web in place"
+
+                }).appendTo(this);
+
+            } // ~html
+        }).appendTo("#ssbDivLoginCR");
 
         $("#ssbLPCheckShowPass").change(function () {
             if ($(this).prop("checked"))
