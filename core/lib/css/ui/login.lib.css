@@ -1,0 +1,130 @@
+/*
+    CSS resource file for ui element "login panel"
+*/
+html {
+    background-size: auto 100%;
+    overflow: hidden;
+}
+
+.ssbFormLP input::-webkit-input-placeholder {
+    color: #EEE;
+}
+.ssbFormLP input:-moz-placeholder {
+    color: #EEE;
+    opacity: 1;
+}
+.ssbFormLP input::-moz-placeholder {
+    color: #EEE;
+    opacity: 1;
+}
+.ssbFormLP input:-ms-input-placeholder {
+    color: #EEE;
+}
+
+#ssbLPMainbox {
+	z-index: 5;
+    background: rgba(51,51,51,0.5);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -175px;
+    padding: 25px 0 0 0;
+    text-align: center;
+    width: 350px;
+    overflow-y: auto;
+}
+/*
+#ssbLPMainboxBG {
+	z-index: 4;
+	background: url("../../../img/_glob_bg.jpg") no-repeat 50% -50px transparent fixed;
+	filter: blur(140px);
+	-webkit-filter: blur(140px);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -175px;
+    width: 350px;
+	height: 395px;
+}
+*/
+
+@media screen and (max-width: 450px) {
+    html {
+        background: #333;
+    }
+    #ssbLPMainbox,
+	#ssbLPMainboxBG {
+        top: 5px;
+        right: 5px;
+        bottom: 40px;
+        left: 5px;
+        margin: 0;
+        width: auto;
+		height: auto;
+    }
+	#ssbLPMainbox .panel .panel-footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 5px !important;
+    }
+	#ssbDivLoginCR {
+	    display: none;
+    }
+}
+
+#ssbLPMainbox .panel {
+    margin: 25px 0 0 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+#ssbLPMainbox .panel .panel-body { padding: 25px 10px 0 10px; }
+#ssbLPMainbox .panel .panel-heading,
+#ssbLPMainbox .panel .panel-footer {
+    background: transparent;
+    border: none;
+    color: #FFF;
+    border-radius: 0;
+}
+#ssbLPMainbox .panel .panel-footer {
+    background: #333;
+    padding: 10px;
+}
+
+#ssbLoginIconPass,
+#ssbLoginIconUser,
+.ssbFormLP input[type="text"],
+.ssbFormLP input[type="password"],
+.ssbFormLP .checkbox {
+	height: 40px;
+    border-width: 0 0 1px 0;
+    box-shadow: none;
+    background: transparent;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 14px;
+}
+.ssbFormLP .checkbox {
+	display: block;
+	text-align: right;
+}
+
+.ssbFormLP button[type="submit"] {
+    margin-top: 10px;
+}
+
+#ssbDivLoginCR {
+	z-index: 3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    color: #CCC;
+    text-align: center;
+    transition: filter 250ms linear;
+}
+#ssbDivLoginCR p { margin: 2px; }

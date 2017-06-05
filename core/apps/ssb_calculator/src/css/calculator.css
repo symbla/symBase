@@ -1,0 +1,27 @@
+div#calculator-wrapper {
+    width: 100%;
+    margin: 10px 0;
+    padding: 3px 0;
+    overflow: hidden;
+}
+div#calculator-wrapper {
+    font-size: 25px;
+    font-weight: bold;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+div#calculator-wrapper input[type="text"] {
+    width: 100%;
+    text-align: right;
+}
+div#calc-board .btn {
+    margin-bottom: 5px;
+    width: calc(100% / 6);
+    font-weight: bold;
+}
+div#calc-history {
+    background: #EEE;
+    padding: 5px 0;
+    overflow-y: auto;
+}

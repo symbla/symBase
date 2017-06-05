@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes' ?>
+<ssbapp>
+    <title>ssb_calculator</title>
+    <icon>calculator</icon>
+    <widget>true</widget>
+    <displayname>
+        <de>Rechner</de>
+        <en>Calculator</en>
+    </displayname>
+    <description>
+        <de>Applikation zur Berechnungen einfacher Gleichungen</de>
+        <en>Application for calculating simple equations</en>
+    </description>
+    <view>
+        <width>550</width>
+        <height>300</height>
+        <posx>100</posx>
+        <posy>100</posy>
+    </view>
+    <version>0.1</version>
+    <landing>src/calculator.html</landing>
+    <author>Julian Baumüller</author>
+</ssbapp>

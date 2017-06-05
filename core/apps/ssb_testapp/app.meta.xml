@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes' ?>
+<ssbapp>
+    <title>ssb_testapp</title>
+    <icon>cog</icon>
+    <widget>false</widget>
+    <displayname>
+        <de>Test App</de>
+        <en>TestApp</en>
+    </displayname>
+    <description>
+        <de>Zeigt Daten zum laufenden Host-System wie z.B. CPU Auslastung und Verbrauch des Arbeitsspeichers</de>
+        <en>Shows informations about running Tasks, use of memory, etc. on the host system</en>
+    </description>
+    <view>
+        <width>600</width>
+        <height>400</height>
+        <posx>100</posx>
+        <posy>75</posy>
+    </view>
+    <version>0.1</version>
+    <author>Julian Baumüller</author>
+    <landing>src/testapp.php</landing>
+</ssbapp>

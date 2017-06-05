@@ -1,0 +1,121 @@
+/*
+    CSS resource file for dashboard
+*/
+
+    /*
+        Import resource file for file explorer
+     */
+    @import url("./filelist.lib.css");
+	@import url("./notify.lib.css");
+
+div#ssbDashBoard {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    right: 0;
+    bottom: 52px;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    #background: url("../../../img/_glob_bg_oil.jpg") no-repeat 50% 0 #000 fixed; background-size: 100% 100%;
+}
+div.ssbDashElement {
+    display: table;
+    border: none;
+    transition: box-shadow 250ms ease-in-out;
+    margin-bottom: 10px;
+}
+div.ssbDashElement .panel {
+    transition: all 150ms linear;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5);
+}
+div.ssbDashElement .panel-heading {
+    padding: 1px 10px;
+    background: #777;
+}
+
+@media screen and (max-width: 991px) {
+
+    div#ssbDashBoard {
+        padding: 0 15px;
+    }
+
+    div.ssbDashRow {
+        margin-top: 0;
+    }
+
+    div.ssbDashElement {
+        padding: 0px !important;
+        margin-bottom: 0;
+    }
+
+    div.ssbDashElement .panel {
+        margin-bottom: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+    div#ssbGlobNotificationCenter {
+        position: fixed;
+        right: 0;
+    }
+
+}
+
+    /*
+        Special Dashboard elements
+    */
+
+        /*
+            Dashboard date and time
+        */
+
+        div#ssbDashClock .panel-body {
+            padding: 0;
+        }
+
+        div#ssbDCTime p {
+            text-align: center;
+            font-size: 55px;
+            color: rgba(0,0,0,.5);
+            font-weight: bold;
+        }
+        div#ssbDCTime p i {
+            text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+            color: #FFF !important;
+        }
+
+        div#ssbDCSeconds {
+            width: 100%;
+            height: 7px;
+            overflow: hidden;
+        }
+        div#ssbDCSecondsBar {
+            height: 7px;
+            background: #0088FF;
+            transition: width 1s ease-out;
+            -webkit-transition: width 1s ease-out;
+        }
+        /* END */
+
+        /*
+            Dashboard client system
+        */
+        div#ssbDashClientInfo #ssbDashGreyBox {
+            padding: 10px;
+        }
+        div#ssbDashClientInfo .panel-body span i {
+            display: block;
+            width: 25px;
+            text-align: center;
+            float: left;
+            font-size: 20px;
+        }
+        div#ssbDashClientInfo .panel-body span.text {
+            display: block;
+            padding: 0 0 0 30px;
+        }
+        div#ssbDashClientInfo .panel-body hr {
+            margin: 10px 0;
+        }

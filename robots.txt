@@ -1,0 +1,10 @@
+# Robots TXT for symBase subdirectories
+# DO NOT CHANGE THIS FILE
+
+User-agent: *
+Disallow: /.git/
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /core/
+Disallow: /font-awesome/
+Disallow: /tests/

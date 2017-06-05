@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes' ?>
+<ssbapp>
+    <title>ssb_galery</title>
+    <icon>picture-o</icon>
+    <widget>false</widget>
+    <displayname>
+        <de>Galerie</de>
+        <en>Gallery</en>
+    </displayname>
+    <description>
+        <de>Durchsucht die eigenen Dateien nach Bildern und stellt diese in einer Galerie zusammen.</de>
+        <en>Scans your files for images and assembles them in a gallery.</en>
+    </description>
+    <view>
+        <width>950</width>
+        <height>550</height>
+        <posx>100</posx>
+        <posy>75</posy>
+    </view>
+    <version>0.1</version>
+    <author>Julian Baumüller</author>
+    <landing>src/explorer.php</landing>
+</ssbapp>

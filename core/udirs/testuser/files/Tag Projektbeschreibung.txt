@@ -1,0 +1,5 @@
+Dieses Projekt soll es ermöglichen, CodeMeter-Lizenzdateien mit Hilfe einer grafischen Benutzeroberfläche zu generieren und so die Lizenzierung der MBTsuite zu vereinfachen.
+CodeMeter ist ein Tool, welches zur Lizenzierung verwendet wird und dabei die Generierung der Lizenzdateien selbst durchführt.
+Zum Auslesen sowie zur Prüfung der Lizenzdateien verwendet es einen Server, welcher sich extern oder lokal auf dem Hostsystem befinden kann.
+Die Generierung dieser Lizenzdateien war bisher lediglich per Befehl innerhalb der Programmeigenen Kommandozeile möglich.
+Ziel dieses Projekts soll die Entwicklung eines Programms sein, welches die Generierung der oben genannten Dateien dank einer grafischen Benutzeroberfläche vereinfacht sowie das Speichern und Laden von Lizenz-Vorlagen in XML-Dateien ermöglicht.

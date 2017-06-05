@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes' ?>
+<ssbapp>
+    <title>ssb_maps</title>
+    <icon>map</icon>
+    <widget>true</widget>
+    <displayname>
+        <de>Karten</de>
+        <en>Maps</en>
+    </displayname>
+    <description>
+        <de>test desc maps de</de>
+        <en>test desc maps en</en>
+    </description>
+    <view>
+        <width>750</width>
+        <height>550</height>
+        <posx>100</posx>
+        <posy>100</posy>
+    </view>
+    <version>0.1</version>
+    <landing>src/maps.html</landing>
+    <author>Julian Baumüller</author>
+</ssbapp>

@@ -1,0 +1,8 @@
+/*
+	CSS resources file for app windows
+*/
+
+div#ssbAppContent {
+    width: 100%;
+    overflow: auto;
+}

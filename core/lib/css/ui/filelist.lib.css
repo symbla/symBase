@@ -1,0 +1,49 @@
+
+/*
+ * App: Explorer
+ * =====================
+ * CSS resource file
+ */
+
+div#ssbAppExplorer .panel-body {
+    padding: 0 !important;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+div#ssbAEDirTree .input-group {
+    border: none;
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+}
+
+ol#ssbAEDirBCPath {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
+}
+
+tr#ssbAENewElement {
+    display: none;
+    font-weight: normal !important;
+}
+
+/*
+    Content Table and column sizes
+ */
+    table#ssbAEDirContent th {
+        vertical-align: bottom;
+        font-weight: normal;
+    }
+    table#ssbAEDirContent th:nth-child(3) { text-align: right; }
+
+    table#ssbAEDirContent td:nth-child(1) { width: 5%; vertical-align: middle; }
+    table#ssbAEDirContent td:nth-child(2) { width: 65%; vertical-align: middle; color: #333 !important; word-break: break-all; }
+    table#ssbAEDirContent td:nth-child(3) { width: 15%; text-align: right; vertical-align: middle; }
+    table#ssbAEDirContent td:nth-child(4) { width: 15%; vertical-align: middle; }
+
+table#ssbAEDirContent {
+    color: #AAA;
+    margin-bottom: 0 !important;
+}

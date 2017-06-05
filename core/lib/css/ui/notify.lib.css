@@ -1,0 +1,51 @@
+/*
+    CSS resource file for ui element "notify panel"
+*/
+
+div#ssbGlobNotifyContainer {
+	background: #333;
+	padding: 0;
+	max-height: 400px;
+	overflow-y: auto;
+}
+div#ssbGlobNotifyContainer div:not(.log) {
+	display: block !important;
+}
+
+div.ssbGlobNotify {
+	background: #333;
+	padding: 10px;
+	margin: 0;
+}
+div.ssbGlobNotify:hover {
+	border-left-width: 5px;
+}
+div.ssbGlobNotify p {
+	color: #CCC;
+	margin-bottom: 0 !important;
+}
+div.ssbGlobNotify:hover > p {
+	max-height: initial;
+}
+div#ssbGlobNotifyHeader {
+	display: block;
+}
+div#ssbGlobNotifyHeader a {
+	cursor: pointer;
+	float: right;
+	color: #CCC;
+}
+div#ssbGlobNotifyHeader h5 {
+	color: #FFF;
+	margin: 5px 0;
+	font-weight: normal;
+}
+div#ssbGlobNotifyHeader h5 i {
+	font-size: 16px;
+	color: #CCC !important;
+}
+div.ssbGlobNotify.info { border-left: 5px solid #0088FF; background: #0088FF; }
+div.ssbGlobNotify.success { border-left: 5px solid #008000; background: #008000; }
+div.ssbGlobNotify.warn { border-left: 5px solid #FF8000; background: #FF8000; }
+div.ssbGlobNotify.error { border-left: 5px solid #E30808; background: #E30808; }
+div.ssbGlobNotify.log { display: none; }

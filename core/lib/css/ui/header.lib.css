@@ -1,0 +1,117 @@
+/*
+    CSS resource file for ui element "header"
+*/
+
+#ssbHeader {
+    border-top: 2px solid #0088FF !important;
+}
+
+@media screen and (min-width:768px) {
+
+    div#ssbAppMenu > .modal-dialog,
+    div#ssbLogoutDialog > .modal-dialog {
+        position: absolute;
+        bottom: 71px;
+        margin: 0;
+    }
+
+    div#ssbAppMenu > .modal-dialog > .modal-content,
+    div#ssbLogoutDialog > .modal-dialog > .modal-content {
+        border: none;
+        max-height: 500px;
+    }
+    div#ssbAppMenu .modal-content {
+        overflow-y: auto;
+    }
+
+    div#ssbAppMenu > .modal-dialog {
+        left: 20px;
+        width: 400px;
+    }
+
+    div#ssbAppMenu div#ssbAppMinimizedToolbar {
+        display: none;
+    }
+
+    div#ssbLogoutDialog > .modal-dialog {
+        right: 21px;
+    }
+
+}
+
+div#ssbAppMenu div#ssbAppMinimizedToolbar > h5 {
+    color: #5A5A5A;
+    text-align: left !important;
+    padding-bottom: 10px;
+}
+
+div#ssbAppMenuContent {
+    text-align: left;
+    padding: 5px 0 !important;
+}
+
+div#ssbAppMenuContent button {
+    width: -moz-calc(95%/3);
+    width: -webkit-calc(95%/3);
+    width: calc(95%/3);
+    margin: 5px 0;
+    padding: 5px 0;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+}
+div#ssbAppMenuContent button:hover, div#ssbAppMenuContent button:focus {
+    background: transparent;
+    -moz-transform: scale(1.1);
+}
+div#ssbAppMenuContent button > p {
+    padding: 0;
+    margin: 0;
+    border-radius: 2px;
+    transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+}
+div#ssbAppMenuContent button:hover > p {
+    /*font-weight: bold;
+    text-shadow: 2px 2px 0 #DDD;
+    text-decoration: underline;
+    border-bottom: 2px solid #0088FF;*/
+}
+
+div#ssbAppMenuContent button > span {
+    padding-bottom: 5px;
+    transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+}
+div#ssbAppMenuContent button:hover > span {
+    text-shadow: 2px 2px 0 #DDD;
+    color: #0088FF;
+}
+
+
+/* hidden menu */
+div#ssbHeaderNavbarCollapse {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    -moz-opacity: 0.5;
+}
+
+/* app menu launcher */
+a#ssbLinkAppMenuLauncher {
+    font-size: 18px;
+    margin-left: 0;
+    background: #000;
+}
+
+a#ssbLinkAppMenuLauncher i {
+    font-size: 18px;
+}
+
+/* User Info Menu */
+li#ssbHeaderUserInfo {
+    padding: 5px 10px 5px 5px;
+}

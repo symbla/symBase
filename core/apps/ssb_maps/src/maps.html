@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="./core/apps/ssb_maps/src/css/maps.css" />
+<script src="./core/apps/ssb_maps/src/thirdparty/OpenLayers-2.13.1/OpenLayers.js"></script>
+<script type="text/javascript">
+	var map = new OpenLayers.Map({
+	    div: "ssbAppMapContainer",
+	    layers: [
+	        new OpenLayers.Layer.OSM("OSM (without buffer)"),
+	        new OpenLayers.Layer.OSM("OSM (with buffer)", null, {buffer: 2})
+	    ],
+	    controls: [
+	        new OpenLayers.Control.Navigation({
+	            dragPanOptions: {
+	                enableKinetic: true
+	            }
+	        }),
+	        new OpenLayers.Control.PanZoom(),
+	        new OpenLayers.Control.Attribution()
+	    ],
+	    center: [0, 0],
+	    zoom: 3
+	});
+	
+	map.addControl(new OpenLayers.Control.LayerSwitcher());
+</script>
+
+<div id="ssbAppMapContainer"></div>
