@@ -33,13 +33,14 @@
 	
 	// Set global AJAX properties
 	$.ajaxSetup({
-		beforeSend: function(jqxhr, object) {
-			var progressTimeout = setTimeout('SymBase.notify("info", ["Warten auf Prozess...", "Der Prozess dauert länger als gewöhnlich."], ["Waiting for process...", "The process takes longer than usual."])', 6000);
+        progressTimeout: setTimeout('SymBase.notify("info", ["Warten auf Prozess...", "Der Prozess dauert länger als gewöhnlich."], ["Waiting for process...", "The process takes longer than usual."])', 6000),
+        beforeSend: function(jqxhr, object) {
 			NProgress.inc();
 			
 		}, complete: function() {
 			NProgress.done();
-			clearTimeout(progressTimeout);
+			clearTimeout(this.progressTimeout);
+			
 		}
 	});
 
